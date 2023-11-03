@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Butterfly
 
 
@@ -20,3 +20,12 @@ def butterfly_detail(request, butterfly_id):
 class ButterflyCreate(CreateView):
   model = Butterfly
   fields = '__all__'
+  success_url = '/butterflies/'
+
+class ButterflyUpdate(UpdateView):
+  model = Butterfly
+  fields =['species', 'description', 'age']
+
+class ButterflyDelete(DeleteView):
+  model = Butterfly
+  success_url = '/butterflies/'

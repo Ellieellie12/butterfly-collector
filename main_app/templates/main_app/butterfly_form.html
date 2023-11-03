@@ -6,9 +6,12 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="page-header">
-  <h1>Add a Butterfly</h1>
+  {% if butterfly %}
+    <h1>Edit {{ butterfly.name }}</h1>
+  {% else %}
+    <h1>Add a Butterfly</h1>
+  {% endif %}
   <img src="{% static '' %}" alt=""/>
 </div>
 
