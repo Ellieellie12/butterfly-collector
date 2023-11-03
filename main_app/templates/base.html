@@ -28,8 +28,9 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/butterflies">My Butterflies</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'butterfly-index' %}">My Butterflies</a></li>
+        <li><a href="{% url 'butterfly-create' %}">Add a Butterfly</a></li>
       </ul>
     </nav>
   </header>
