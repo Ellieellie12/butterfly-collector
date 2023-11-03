@@ -152,4 +152,23 @@ nav li {
 
 /* page  */
 
+.page-header h1 {
+  font-size: var(--font-xxl);
+  margin: 0;
+}
+
+.page-header img {
+  height: 40px;
+  margin-left:15px;
+}
+
+.page-header img:first-of-type {
+  margin-left: 20px;
+}
+
+.page-content {
+  font-size: var(--font-reg);
+}
+
+
 
