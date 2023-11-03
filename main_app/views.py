@@ -1,16 +1,6 @@
 from django.shortcuts import render
+from .models import Butterfly
 
-class Butterfly: 
-  def __init__(self, name, species, description, age):
-    self.name = name
-    self.species = species
-    self.description = description
-    self.age = age
-
-butterflies = [
-  Butterfly('Lila', 'Monarch', 'Massive Wings', 3),
-  Butterfly('Maggie', 'Monarch', 'small and orange', 2,)
-]
 
 def home(request):
   return render(request, 'home.html')
@@ -19,4 +9,9 @@ def about(request):
   return render(request, 'about.html')
 
 def butterfly_index(request):
+  butterflies = Butterfly.objects.all()
   return render(request, 'butterflies/index.html', { 'butterflies': butterflies })
+
+def butterfly_detail(request, butterfly_id):
+  butterfly = Butterfly.objects.get(id=butterfly_id)
+  return render(request, 'butterflies/detail.html', { 'butterfly': butterfly })

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/butterflies/butterfly-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="butterfly-container">
+  <div class="butterfly-img">
+    <img 
+      src="" 
+      alt=""
+    >
+  </div>
+  <div class="butterfly-details">
+    <h1>{{ butterfly.name }}</h1>
+    {% if butterfly.age > 0 %}
+      <h2>A {{ butterfly.age }} months old {{ butterfly.species }}</h2>
+    {% else %}
+      <h2>A {{ butterfly.species }} lives long.</h2>
+    {% endif %}
+    <p>{{ butterfly.description }}</p>
+  </div>
+</section>
+
+{% endblock %}

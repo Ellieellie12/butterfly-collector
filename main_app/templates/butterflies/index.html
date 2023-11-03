@@ -21,21 +21,23 @@
 <section class="card-container">
   {% for butterfly in butterflies %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img 
-            src="" 
-            alt=""
-          >
+      <a href="/butterflies/{{ butterfly.id }}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="" 
+              alt=""
+            >
+          </div>
+          <h2 class="card-title">{{ butterfly.name }}</h2>
+          {% if butterfly.age > 0 %}
+            <p>A {{ butterfly.age }} months old {{ butterfly.species }}</p>
+          {% else %}
+            <p>A {{ butterfly.species }} lives long.</p>
+          {% endif %}
+          <p><small>{{ butterfly.description }}</small></p>
         </div>
-        <h2 class="card-title">{{ butterfly.name }}</h2>
-        {% if butterfly.age > 0 %}
-          <p>A {{ butterfly.age }} months old {{ butterfly.species }}</p>
-        {% else %}
-          <p>A {{ butterfly.species }} lives long.</p>
-        {% endif %}
-        <p><small>{{ butterfly.description }}</small></p>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>
