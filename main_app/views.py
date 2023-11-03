@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 class Butterfly: 
   def __init__(self, name, species, description, age):
@@ -14,7 +13,7 @@ butterflies = [
 ]
 
 def home(request):
-  return HttpResponse('<h1>Hello World</h1>')
+  return render(request, 'home.html')
 
 def about(request):
   return render(request, 'about.html')
