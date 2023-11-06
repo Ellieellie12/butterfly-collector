@@ -9,4 +9,5 @@ urlpatterns = [
   path('butterflies/create/', views.ButterflyCreate.as_view(), name='butterfly-create'),
   path('butterflies/<int:pk>/update/', views.ButterflyUpdate.as_view(), name='butterfly-update'),
   path('butterflies/<int:pk>/delete/', views.ButterflyDelete.as_view(), name='butterfly-delete'),
+  path('accounts/signup/', views.signup, name='signup'),
 ]
