@@ -18,15 +18,18 @@
 <body>
   <header>
     <div class="header-logo-container">
-      {% comment %} <a href="/">
-        <img 
-          src=""
+      {% comment %} <a href="/"> {% endcomment %}
+        {% comment %} <img 
+          src="{% static "images/colorful.svg" %}"
           alt="The Butterfly Collector Logo"
-        >
-      </a> {% endcomment %}
+          class="nav-image"
+        > {% endcomment %}
+      {% comment %} </a>  {% endcomment %}
     </div>
     <nav>
+      {% comment %} <h2>The Butterfly Collector</h2> {% endcomment %}
       <ul> 
+        {% comment %} <h2 class="logo-text">The Butterfly Collector</h2> {% endcomment %}
         {% if user.is_authenticated %}
         {% comment %} <li><a href="/">Home</a></li> {% endcomment %}
         <li><a href="{% url 'about' %}">About</a></li>

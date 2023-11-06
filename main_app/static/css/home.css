@@ -15,6 +15,10 @@ main > section {
   flex-direction: column;
 }
 
+.main-title {
+  font-size: 20px;
+  
+}
 .header-logo-container {
   display: none;
 }
@@ -35,7 +39,8 @@ main > section {
   justify-content: center;
   align-items: center;
   width: 80%;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(251, 242, 230);
 }
 
 .login h1 {
