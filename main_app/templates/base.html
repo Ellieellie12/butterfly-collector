@@ -29,6 +29,7 @@
       <ul> 
         {% if user.is_authenticated %}
         <li><a href="/">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'butterfly-index' %}">My Butterflies</a></li>
         <li><a href="{% url 'butterfly-create' %}">Add a Butterfly</a></li>
         <li><a href="{% url 'logout' %}">Log Out</a></li>
@@ -36,8 +37,6 @@
         <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'home' %}">Log In</a></li>
         {% endif %}
-
-
       </ul>
     </nav>
   </header>
