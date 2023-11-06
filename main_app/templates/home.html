@@ -18,7 +18,7 @@
 </section>
 {% if not user.is_authenticated %}
 <section>
-  <form action="{% url 'home' %}" method="post" class="login">
+  <form action="{% url 'home' %}" method="post" class="login" autocomplete="off">
     <h1>Login</h1>
     {% csrf_token %}
     {{ form.as_p }}
