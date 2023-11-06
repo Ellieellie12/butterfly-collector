@@ -95,5 +95,15 @@ main > section {
 }
 
 
+/* about html */
 
+.about-view {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border: rgb(47, 141, 181) solid 10px;
+  margin-top: 40px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
 
