@@ -35,5 +35,7 @@ td > textarea {
 
 .btn {
   align-self: flex-end;
-  margin-right: 40px;
+  /* margin-right: 40px; */
+  margin:auto;
+  margin-bottom: 15px;
 }

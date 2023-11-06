@@ -9,7 +9,7 @@
 
 <section class="logo-container">
   <div class="butterfly-container">
-    {% comment %} <img src="{% static 'images/butterfly.svg' %}" alt="Multicolered Butterfly" /> {% endcomment %}
+    <img src="{% static 'images/colorful.svg' %}" alt="Multicolered Butterfly" />
   </div>
   {% comment %} <img 
     src="{% static 'images/colorful.svg' %}"
@@ -22,8 +22,8 @@
     <h1>Login</h1>
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="hidden" name="next" value="{{ next }}">
-    <button type="submit" class="btn submit">Login</button>
+    <input autocomplete="off" type="hidden" name="next" value="{{ next }}">
+    <button type="submit" class="btn submit">Log In</button>
   </form>
 </section>
 {% endif %}

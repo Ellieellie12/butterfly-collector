@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
+  /* height: 100%; */
 }
 
 *, 
@@ -21,14 +22,18 @@ body {
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif; */
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
+  /* background-color: brown; */
+
+  /* --nav-bg: rgba(104, 197, 248, .7); */
   --nav-bg-ff: pink;
-  --borders: rgb(176, 39, 62) solid 2px;
+  /* --borders: rgb(176, 39, 62) solid 2px; */
+  --borders: pink solid 10px;
   --text-color: rgb(17, 20, 17);
-  --link-hover-color: rgb(16, 56, 158);
+  --link-hover-color: rgb(167, 24, 67);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
-  --submit: rgb(26, 128, 0);
+  /* --submit: rgb(26, 128, 0); */
+  --submit: rgb(212, 90, 111); 
   --warn: rgb(255, 102, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
@@ -38,8 +43,20 @@ body {
   --font-xl: 2.4rem;
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
-  --card-border-radius: 6px;
+  --card-border-radius: 10px;
+  background: linear-gradient( 90deg,
+      rgba(255, 225, 132, .7) 50%, rgba(255,255,255, 0) 50%),
+    linear-gradient( 90deg,
+      rgba(32, 113, 120, .3) 50%, rgba(255,255,255, 0) 50%),
+    linear-gradient( 90deg,
+      rgba(255, 150, 102, .3) 50%, rgba(255,255,255, 0) 50%),
+    linear-gradient( 90deg,
+      rgba(23, 76, 79, .1) 50%, rgba(255,255,255, 0) 50%);
+  background-size: 7em 7em, 5em 5em, 3em 3em, 1em 1em;
+  background-color: #F5E9BE;
+  font: 10px/1.4 'Trebuchet MS', Verdana, sans-serif;
 }
+
 
 header {
   width: 100%;
@@ -49,6 +66,7 @@ header {
 
 nav {
   margin: 10px;
+  
   /* background-color: pink; */
 }
 
@@ -75,7 +93,7 @@ nav a {
 }
 
 nav a:hover {
-  /* color: var(--link-hover-color) change color  */
+  color: var(--link-hover-color);
 } 
 
 nav ul {
@@ -138,11 +156,13 @@ nav li {
 .warn {
   color: var(--warn);
   border-color: var(--warn);
+  font-size: 15px;
 }
 
 .danger {
   color: var(--danger);
   border-color: var(--danger);
+  font-size: 15px;
 }
 
 
@@ -151,20 +171,26 @@ nav li {
 
 
 /* page  */
-
+.border-range{
+  margin-top: 40px;
+  border: rgb(230, 121, 139) solid 10px;
+  /* border: rgb(47, 69, 15) solid 10px; */
+  background-color: rgb(251, 242, 230);
+}
 .page-header h1 {
   font-size: var(--font-xxl);
   margin: 0;
+  /* border: pink solid; */
 }
 
-.page-header img {
+/* .page-header img {
   height: 40px;
   margin-left:15px;
-}
+} */
 
-.page-header img:first-of-type {
+/* .page-header img:first-of-type {
   margin-left: 20px;
-}
+} */
 
 .page-content {
   font-size: var(--font-reg);

@@ -1,3 +1,7 @@
+.butterfly-list {
+  margin-right: 30%;
+}
+
 .card-container {
   padding: 0 30px;
   display: flex;
@@ -10,6 +14,7 @@
   margin: 10px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
+  background-color: antiquewhite;
 }
 
 .card-content {
@@ -36,3 +41,4 @@
   margin: 5px 0;
   font-size: var(--font-reg);
 }
+
