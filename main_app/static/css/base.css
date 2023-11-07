@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  /* height: 100%; */
 }
 
 *, 
@@ -18,21 +17,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
-    'Helvetica Neue', sans-serif; */
   min-height: 100vh;
-  /* background-color: brown; */
-
-  /* --nav-bg: rgba(104, 197, 248, .7); */
   --nav-bg-ff: pink;
-  /* --borders: rgb(176, 39, 62) solid 2px; */
   --borders: pink solid 10px;
   --text-color: rgb(17, 20, 17);
   --link-hover-color: rgb(167, 24, 67);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
-  /* --submit: rgb(26, 128, 0); */
   --submit: rgb(212, 90, 111); 
   --warn: rgb(68, 133, 214);
   --danger: rgb(65, 167, 65);
@@ -57,17 +48,14 @@ body {
   font: 10px/1.4 'Trebuchet MS', Verdana, sans-serif;
 }
 
-
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  background: var(--nav-bg-ff); 
   border-bottom: var(--borders); 
 } 
 
 nav {
   margin: 10px;
-  
-  /* background-color: pink; */
 }
 
 ul {
@@ -77,13 +65,8 @@ ul {
 }
 
 main {
-  /* width: 100%; */
   padding: 0 10px;
 }
-
-
-
-
 
 nav a {
   text-decoration: none;
@@ -119,12 +102,6 @@ nav li {
   margin: 20px;
 }
 
-
-
-
-
-/* add more css here for other views */
-
 .btn {
   font-size: var(--font-l);
   padding: 8px 16px;
@@ -153,7 +130,6 @@ nav li {
   border-color: var(--secondary);
 }
 
-
 .warn {
   color: var(--warn);
   border-color: var(--warn);
@@ -164,8 +140,6 @@ nav li {
   color: var(--danger);
   border-color: var(--danger);
   font-size: 15px;
-  /* margin-right: 15%; */
-  /* margin-left: 15%; */
   padding: 10px;
 }
 
@@ -173,31 +147,19 @@ nav li {
   margin-left: 15%;
 }
 
-
-
-
-
-
-/* page  */
 .border-range{
   margin-top: 40px;
   border: rgb(230, 121, 139) solid 10px;
-  /* border: rgb(47, 69, 15) solid 10px; */
   background-color: rgb(251, 242, 230);
 }
 
 .delete-border {
   border: rgb(230, 121, 139) solid 10px;
   margin-top: 40px;
-  /* margin-right: 20px; */
   padding: 20px;
-  /* border: rgb(47, 69, 15) solid 10px; */
   background-color: rgb(251, 242, 230);
   align-items: center;
-  /* justify-content: center; */
 }
-
-
 
 .question {
   margin-left: 10%;
@@ -206,7 +168,6 @@ nav li {
 .page-header h1 {
   font-size: var(--font-xxl);
   margin: 0;
-  /* border: pink solid; */
 }
 
 .page-header img {
@@ -221,17 +182,3 @@ nav li {
 .page-content {
   font-size: var(--font-reg);
 }
-
-/* .logo-text {
-  margin-left: 20%;
-} */
-
-/* 
-.nav-image {
-  height: 30px;
-  margin-right: 10%;
-} */
-
-
-/* new */
-

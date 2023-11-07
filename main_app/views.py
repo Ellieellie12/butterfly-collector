@@ -27,7 +27,7 @@ def butterfly_detail(request, butterfly_id):
 class ButterflyCreate(LoginRequiredMixin, CreateView):
   model = Butterfly
   fields = ['name', 'species', 'description', 'age']
-  # success_url = '/butterflies/'
+
   def form_valid(self, form):
     form.instance.user = self.request.user 
     return super().form_valid(form)

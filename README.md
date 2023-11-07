@@ -1,7 +1,7 @@
 # The Butterfly Collector 🦋
 The Butterfly Collector helps keep track of the butterflies you've collected and studied before you release them back into the world.
 
-Description: The Butterfly Collector is a full stack web application created with the user in mind. 
+Description: The Butterfly Collector is a full stack Django application created with the user in mind. 
 
 ## Getting Started:
 Click the link to start collecting you butterflies:
