@@ -1,6 +1,6 @@
-.butterfly-list {
+/* .butterfly-list {
   margin-right: 30%;
-}
+} */
 
 .card-container {
   padding: 0 30px;
@@ -40,4 +40,11 @@
 .card p {
   margin: 5px 0;
   font-size: var(--font-reg);
+}
+
+.butterfly-list {
+  margin-left: 40%;
+  border: pink solid 5px;
+  background-color: rgb(251, 242, 230);
+  padding: 10px;  
 }

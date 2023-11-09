@@ -12,20 +12,15 @@
 {% block content %}
 
 <section class="page-header">
-  <h1>Butterfly List</h1>
+  <div class="butterfly-list">
+    <h1>Butterfly List</h1>
+  </div>
 </section> 
-
 <section class="card-container">
   {% for butterfly in butterflies %}
     <div class="card">
       <a href="{% url 'butterfly-detail' butterfly.id %}">
         <div class="card-content">
-          <div class="card-img-container">
-            <img 
-              src="" 
-              alt=""
-            >
-          </div>
           <h2 class="card-title">{{ butterfly.name }}</h2>
           {% if butterfly.age > 0 %}
             <p>A {{ butterfly.age }} month old {{ butterfly.species }}</p>
